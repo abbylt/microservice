@@ -16,13 +16,29 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 
 ### Usage
 * Run npm start to start the application on localhost:8080.
-* This API can also be accessed directly from https://cs361-microservice-405022.uc.r.appspot.com/.
+* This API can also be accessed directly from https://cs361-microservice-405022.uc.r.appspot.com.
 
-### API Endpoints 
-| HTTP Verbs | Endpoints | Action |
-| --- | --- | ---|
-| GET | /api/survey |  Get data from the survey based on filters provided |
-| lorem ipsum |
+### Get survey data
+
+*POST /api/survey*
+
+*Request Body*: Required
+*Request Body Format*: JSON 
+
+*Request Body Attributes*:
+| Attribute | Description | Required |
+| year | The years that relate to the data pulled (Integer or an Array of Integers) | Yes |
+| report | The name of a report (String or Array of Strings) | No* | 
+| variable | Variable related to different reports (String or Array of Strings) | No* | 
+| report | The name of a report (String or Array of Strings) | No | 
+| sub_report | The name of a sub-report (String or Array of Strings) | No | 
+| category | The name of a category (String or Array of Strings) | No | 
+| category_value | The value for a category (String or Array of Strings) | No | 
+| category2 | The name of a category (String or Array of Strings) | No | 
+| category2_value | The value of a category (String or Array of Strings) | No | 
+| state | The name of a U.S. state (String or Array of Strings) | No | 
+| farmtype | A type of farm (String or Array of Strings) | No |
+
 
 ### Author
 Abby Thornton 
