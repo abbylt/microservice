@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "cb1255ad-3d6b-416e-8f05-6637b354a5f0",
+		"name": "USDA ARMS Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30342656"
+	},
+	"item": [
+		{
+			"name": "Get all farm types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{app-url}}/farmtype?api_key={{api-key}}",
+					"host": [
+						"{{app-url}}"
+					],
+					"path": [
+						"farmtype"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all variables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/variable?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"variable"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all report names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/report?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"report"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get schema for survey data",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/surveydata?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"surveydata"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all years available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/year?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"year"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all states available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/state?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"state"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.ers.usda.gov/data/arms/category?api_key={{api-key}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ers",
+						"usda",
+						"gov"
+					],
+					"path": [
+						"data",
+						"arms",
+						"category"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get subreports for a report",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get survey data from ARMS API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2015,\r\n    \"report\": \"Operator Household Income\",\r\n    \"state\": \"Georgia\",\r\n    \"farmtype\": \"Farm Operator Households\",\r\n    \"category_value\": \"Hogs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{app-url}}/surveydata?api_key={{api-key}}",
+					"host": [
+						"{{app-url}}"
+					],
+					"path": [
+						"surveydata"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{api-key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

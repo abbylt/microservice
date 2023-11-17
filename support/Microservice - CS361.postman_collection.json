@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "18e2e280-6ae7-47f4-a635-8a1442fe2b6a",
+		"name": "Microservice - CS361",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30342656"
+	},
+	"item": [
+		{
+			"name": "Get survey data from my app (GCLOUD)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": [2020, 2021],\r\n  \"variable\": \"Acres operated per farm\",\r\n    \"state\": \"Washington\",\r\n  \"farmtype\": \"Farm Operator Household\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs361-microservice-405022.uc.r.appspot.com/survey",
+					"protocol": "https",
+					"host": [
+						"cs361-microservice-405022",
+						"uc",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"survey"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
