@@ -16,6 +16,12 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 * Run npm start to start the application on localhost:8080.
 * This API can also be accessed directly from https://cs361-microservice-405022.uc.r.appspot.com.
 
+# API Endpoints
+
+| HTTP Verbs | Endpoints | Action |
+| --- | --- | --- |
+| POST | /survey | Get survey data |
+
 # POST /survey
 Get survey data
 
