@@ -46,15 +46,14 @@ Request **MUST** contain either the report or variable attributes
 **Sample Request** 
 
 `POST https://cs361-microservice-405022.uc.r.appspot.com/api/survey`
+
 Request body: 
-```
-{
+```{
     "year": [2020, 2021],
     "variable": "Acres operated per farm",
     "state": "Washington",
     "farmtype": "Farm Operator Household"
-}
-```
+}```
 
 ### Author
 Abby Thornton 
