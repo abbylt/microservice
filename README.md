@@ -40,8 +40,8 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 | state | The name of a U.S. state (String or Array of Strings) | No | 
 | farmtype | A type of farm (String or Array of Strings) | No |
 
-[!IMPORTANT] 
-Request **MUST** contain either the report or variable attributes
+> [!IMPORTANT] 
+> Request **MUST** contain either the report or variable attributes
 
 **Sample Request** 
 
