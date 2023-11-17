@@ -21,6 +21,7 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 ### POST /api/survey
 
 **Request Body**: Required
+
 **Request Body Format**: JSON 
 
 **Request Body Attributes**:
@@ -39,6 +40,7 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 | state | The name of a U.S. state (String or Array of Strings) | No | 
 | farmtype | A type of farm (String or Array of Strings) | No |
 
+* Request **MUST** contain either the report or variable attributes
 
 ### Author
 Abby Thornton 
