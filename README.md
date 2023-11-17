@@ -40,7 +40,21 @@ USDA ARMS Data Fetch is a simple microservice that fetches survey data from the 
 | state | The name of a U.S. state (String or Array of Strings) | No | 
 | farmtype | A type of farm (String or Array of Strings) | No |
 
-* Request **MUST** contain either the report or variable attributes
+[!IMPORTANT] 
+Request **MUST** contain either the report or variable attributes
+
+**Sample Request** 
+
+`POST https://cs361-microservice-405022.uc.r.appspot.com/api/survey`
+Request body: 
+```
+{
+    "year": [2020, 2021],
+    "variable": "Acres operated per farm",
+    "state": "Washington",
+    "farmtype": "Farm Operator Household"
+}
+```
 
 ### Author
 Abby Thornton 
