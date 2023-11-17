@@ -19,7 +19,7 @@ API_KEY = '4wrirOCTqvuPhMFWx7F9lvQvRYw6nuLZoT3AmyKh'
  *      Required attributes: year, report or variable
  *      Optional attributes: state, category, farmtype
 */
-router.post('/', function (req, res) {
+router.post('/survey', function (req, res) {
     if (!req.body.year || (!req.body.report && !req.body.variable)) {
         res.status(400).json({'Error': 'The request object is missing at least one of the required attributes'});
     } else {
