@@ -110,8 +110,11 @@ Response body:
 }
 ```
 
-### Author
+# UML Sequence Diagram
+![UML Sequence Diagram](/uml.png)
+
+# Author
 Abby Thornton 
 
-### License
+# License
 This project is available under the MIT License.
